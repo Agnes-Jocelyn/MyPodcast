@@ -350,6 +350,63 @@ $(document).ready(function()
 				warningAlerts: false
 			});
 
+			$("#jplayer_6").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						title:"Bu Ai Wo Jiu La Dao",
+							artist:"Jay Chou",
+							mp3:"song/Bu-Ai-Wo-Jiu-La-Dao.mp3"
+					});
+				},
+				play: function() { // To avoid multiple jPlayers playing together.
+					$(this).jPlayer("pauseOthers");
+				},
+				swfPath: "plugins/jPlayer",
+				supplied: "mp3",
+				cssSelectorAncestor: "#jp_container_6",
+				wmode: "window",
+				globalVolume: false,
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true,
+				solution: 'html',
+				preload: 'metadata',
+				volume: 0.5,
+				muted: false,
+				backgroundColor: '#000000',
+				errorAlerts: false,
+				warningAlerts: false
+			});
+
+			$("#jplayer_7").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						title:"Love Confession",
+							artist:"Jay Chou",
+							mp3:"song/Love-Confession.mp3"
+					});
+				},
+				play: function() { // To avoid multiple jPlayers playing together.
+					$(this).jPlayer("pauseOthers");
+				},
+				swfPath: "plugins/jPlayer",
+				supplied: "mp3",
+				cssSelectorAncestor: "#jp_container_7",
+				wmode: "window",
+				globalVolume: false,
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true,
+				solution: 'html',
+				preload: 'metadata',
+				volume: 0.5,
+				muted: false,
+				backgroundColor: '#000000',
+				errorAlerts: false,
+				warningAlerts: false
+			});
 
 		}
 	}
