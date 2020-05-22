@@ -628,7 +628,7 @@ section
 {
 	position: absolute;
 	left: 0;
-	bottom: 15px;
+	bottom: 100px;
 	width: 100%;
 }
 .menu_submit
@@ -677,7 +677,7 @@ section
 }
 .home_title
 {
-	
+	text-align: center;
 }
 .home_title h1
 {
@@ -686,7 +686,13 @@ section
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
+.home_title h2
+{
+	font-size: 60px;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 /*********************************
 6. Sidebar
 *********************************/
@@ -952,7 +958,7 @@ section
 }
 .episodes_row
 {
-	margin-top: 79px;
+	margin-top: 20px;
 }
 .episodes_container
 {
@@ -973,6 +979,9 @@ section
 {
 	width: 163px;
 	height: 100%;
+}
+.episode_image img{
+	border-radius: 50%;
 }
 .tags
 {

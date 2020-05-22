@@ -615,7 +615,7 @@ section
 {
 	position: absolute;
 	left: 0;
-	bottom: 15px;
+	bottom: 100px;
 	width: 100%;
 }
 .menu_submit
@@ -656,6 +656,10 @@ section
 .home
 {
 	height: 830px;
+}
+.homes
+{
+	height: 1500px;
 }
 .home_container
 {
@@ -701,10 +705,11 @@ section
 .home_title
 {
 	margin-top: 12px;
+	text-align: center;
 }
 .home_title h1
 {
-	font-size: 36px;
+	font-size: 50px;
 	color: #FFFFFF;
 	font-weight: 500;
 }
@@ -772,6 +777,9 @@ section
 	overflow: hidden;
 	background: #f6f6f6;
 }
+.show:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ }
 .show_image a
 {
 	display: block;
@@ -1329,7 +1337,7 @@ section
     background-position: center center;
     display: block;
     width: 100%;
-    height: 500px;
+    height: 600px;
     /* height: 100vh; *//* If you want fullscreen */
     position: relative;
     background-size: cover;
@@ -1523,3 +1531,46 @@ section
         transform: scale(1);
     }
 }
+
+
+button:hover{cursor: pointer}
+button {
+	background: transparent; outline: none;
+	position: relative;
+	border: 2px solid #111;
+	padding: 15px 50px;
+	overflow: hidden;
+}
+
+/*button:before (attr data-hover)*/
+button:hover:before{opacity: 1; transform: translate(0,0);}
+button:before{
+	content: attr(data-hover);
+	position: absolute;
+	top: 1.1em; left: 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: .8em;
+	opacity: 0;
+	transform: translate(-100%,0);
+	transition: all .3s ease-in-out;
+}
+/*button div (button text before hover)*/
+button:hover div{
+	opacity: 0;
+	transform: translate(100%,0)
+}
+button div{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: .8em;
+	transition: all .3s ease-in-out;
+}
+
+
+
+
+
